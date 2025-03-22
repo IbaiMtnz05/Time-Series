@@ -51,10 +51,13 @@ def knn_cosine(data, k, i):
 def main(k, i):
     scaled_data = ScaleData(X)
     #print(scaled_data.head())
-    
+    print("\n=== Result with normalized data ===")
     # Use the same scaled data for both KNN calls
     knn_euclidean(scaled_data, k+1, i)
     knn_cosine(scaled_data, k+1, i)
+    print("\n=== Result without normalized data ===")
+    knn_euclidean(X, k+1, i)
+    knn_cosine(X, k+1, i)
 
 if __name__ == "__main__":
     try:
