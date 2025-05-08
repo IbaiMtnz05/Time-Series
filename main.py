@@ -82,3 +82,5 @@ if __name__ == "__main__":
         print("Usage: python main.py <k_neighbors> <vector_index>")
         print("Example: python main.py 3 50")
         sys.exit(1)
+
+#TODO E.M.D
